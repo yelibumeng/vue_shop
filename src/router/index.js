@@ -5,6 +5,8 @@ import Login from '../components/Login.vue'//这里记得使用../使用./找不
 import Home from '../components/Home.vue'
 import Welcome from '../components/Welcome.vue'
 import Users from '../components/user/Users.vue'
+import Rights from '../components/power/Rights.vue'
+import Roles from '../components/power/Roles.vue'
 const originalPush = VueRouter.prototype.push
    VueRouter.prototype.push = function push(location) {
    return originalPush.call(this, location).catch(err => err)
@@ -22,6 +24,8 @@ const router= new VueRouter({
     children:[
       {path:'/welcome', component: Welcome},
       {path:'/users', component: Users},
+      {path:'/rights', component: Rights},
+      {path:'/roles', component: Roles},
     ]
   },
 
