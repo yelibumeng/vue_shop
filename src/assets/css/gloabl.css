@@ -18,7 +18,7 @@ body,
    margin-top: 15px;
 }
 .el-cascader{
-   width:100%;
+   width:30%;
 }
 .el-cascader__dropdown {
    height: 200px;
